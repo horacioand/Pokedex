@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using Dominio;
 
-namespace Pokedex
+namespace Negocio
 {
-    internal class PokemonDatabase
+    public class PokemonDatabase
     {
         //necesito una funcion que me devuelva un conjunto de datos, por lo que uso una funcion que me devuelva una lista de los datos
         public List<Pokemon> listar()

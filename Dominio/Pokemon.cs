@@ -5,9 +5,9 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pokedex
+namespace Dominio
 {
-    internal class Pokemon
+    public class Pokemon
     {
         public int Numero { get; set; }
         public string Nombre { get; set; }
