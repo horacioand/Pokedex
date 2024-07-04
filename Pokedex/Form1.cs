@@ -27,6 +27,12 @@ namespace Pokedex
             dgvPokemons.DataSource = listaPokemon;  //cargar la lista en dgv
             dgvPokemons.Columns["Imagen"].Visible = false;  //ocultar la columna
             cargarImagen(listaPokemon[0].Imagen); 
+
+            AccesoDatos datos = new AccesoDatos();
+            datos.SetQuery("SELECT Id, Descripcion FROM ELEMENTOS");
+            ElementoNegocio conexionElemento = new Negocio.ElementoNegocio();
+            dgvElementos.DataSource = conexionElemento.listar();
+           
         }
 
 
